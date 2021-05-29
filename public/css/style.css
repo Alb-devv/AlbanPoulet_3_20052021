@@ -1,0 +1,160 @@
+header {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+header__logo {
+  font-size: 7rem;
+  height: 33px;
+}
+
+.position {
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+}
+.position__fa-map-maker-alt {
+  width: 13px;
+}
+.position__p {
+  width: 109px;
+}
+
+.accroche {
+  width: 100%;
+  height: 289px;
+}
+.accroche__h2 {
+  width: 237px;
+  height: 54px;
+}
+.accroche__p {
+  width: 310px;
+  height: 40px;
+}
+.accroche__button {
+  width: 219px;
+  height: 51px;
+  border-radius: 30px;
+  text-decoration-color: white;
+}
+
+.fonction {
+  width: 100%;
+  height: 440px;
+}
+.fonction__h2 {
+  width: 178px;
+  height: 21px;
+}
+.fonction__step1 {
+  width: 323px;
+  height: 74px;
+}
+.fonction__step1 cercles {
+  width: 25px;
+}
+.fonction__step1 fa-mobile-alt {
+  height: 20px;
+}
+.fonction__step1 p {
+  width: 178px;
+  height: 15px;
+}
+.fonction__step2 {
+  width: 323px;
+  height: 74px;
+}
+.fonction__step2 cercles {
+  width: 25px;
+}
+.fonction__step2 fa-list-ul {
+  width: 20px;
+  height: 20px;
+}
+.fonction__step2 p {
+  width: 178px;
+  height: 15px;
+}
+.fonction__step3 {
+  width: 323px;
+  height: 74px;
+}
+.fonction__step3 cercles {
+  width: 25px;
+}
+.fonction__step3 fa-store {
+  height: 20px;
+}
+.fonction__step3 p {
+  width: 178px;
+  height: 15px;
+}
+
+.restos {
+  width: 100%;
+  height: 1228px;
+}
+.restos__h2 {
+  width: 132px;
+  height: 20px;
+}
+.restos__container-resto {
+  width: 338px;
+  height: 1059px;
+}
+
+.resto {
+  width: 338px;
+  height: 251px;
+}
+.resto__resto-img {
+  width: 100%;
+  height: 174px;
+}
+.resto__rectangle {
+  width: 80px;
+  height: 30px;
+}
+.resto__resto-txt {
+  width: 305px;
+  height: 46px;
+}
+.resto__resto-txt__h3 {
+  width: 262px;
+  height: 20px;
+  font-weight: bold;
+}
+.resto__resto-txt__p {
+  width: 262px;
+  height: 20px;
+}
+.resto__resto-txt__fa-heart {
+  width: 26px;
+  height: 26px;
+}
+
+footer {
+  width: 100%;
+  height: 198px;
+}
+footer__nav {
+  width: 100%;
+  height: 198px;
+}
+footer__nav__logo {
+  width: 100%;
+  height: 198px;
+}
+footer__nav__ul {
+  width: 100%;
+  height: 198px;
+}
+footer__nav__ul__li {
+  width: 191px;
+  height: 22px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -3,17 +3,17 @@
    <head>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Ohmyfood</title>
-       <link rel="stylesheet" href="\.public\css\style.css"/>
        <link rel="preconnect" href="https://fonts.gstatic.com">
        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="/public/css/style.css">
        <script src="https://kit.fontawesome.com/9fcdfaa30b.js" crossorigin="anonymous"></script> 
+       <title>Ohmyfood</title>
    </head>
 
    <body>
-       <div id="bloc_page">
-       <header>
-       <img class="logo" src="images/logo/ohmyfood.png" alt="Ohmyfood" />
+
+       <header class="header">
+       <img class="header__logo" src="img/logo/ohmyfood.png" alt="Ohmyfood" />
        </header>
        
        <section class="position">
@@ -21,13 +21,13 @@
        <p>Paris, Belleville</p>  
        </section>
 
-       <Section class= "accroche">
-        <h2 class ="">Réservez le menu qui vous convient</h2>
+       <section class= "accroche">
+        <h2 class ="accroche__heading">Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="">Explorer nos restaurants</button>
-       </Section>
+        <button class="accroche__byline">Explorer nos restaurants</button>
+       </section>
 
-       <Section class= "fonction">
+       <section class= "notice">
            <div class="step">
                 <h2 class ="">Fonctionnement</h2>
                 <article class= "step1">
@@ -51,47 +51,48 @@
        <section class="restos">
         <h2 class ="">Restaurants</h2>
 
-        <div class="container-resto">
-            <article class="resto">
-                <img class="resto-img" src="images/.jpg" alt="La palette du goût">
-                <div class="rectangle">Nouveau</div>
-                <div class="resto-txt">
+        <div class="container">
+            <article class="resto-prev">     <!-- naming resto-prev -->
+             <div class="resto-prev__image">
+                <img src="/images/restaurants/lapalette.jpg" alt="La palette du goût" >
+             </div>
+                <div class="resto-prev__rectangle">Nouveau</div>
+                <div class="resto-prev__txt">
                     <h3>La palette du goût</h3>
                     <p>Ménilmontant</p><i class="far fa-heart"></i>
-                    </div>
                 </div>
             </article>
 
-            <article class="resto">
-                <img class="resto-img" src="images/.jpg" alt="La note enchantée">
-                <div class="rectangle">Nouveau</div>
-                <div class="rectangle">Nouveau</div>
-                <div class="resto-txt">
+            <article class="resto-prev">
+             <div class="resto-prev__image">   <!-- echanger avec resto-img dans le css la classe enlevée de bal img -->
+                <img src="/images/restaurant/lanote.jpg" alt="La note enchantée" >
+             </div>
+                <div class="resto-prev__rectangle">Nouveau</div>
+                <div class="resto-prev__txt">
                     <h3>La note enchantée</h3>
                     <p>Charonne</p><i class="far fa-heart"></i>
-                    </div>
                 </div>
             </article>
 
-            <article class="resto">
-                <img class="resto-img" src="images/.jpg" alt="A la française">
-                <div class="rectangle">Nouveau</div>
-                <div class="resto-txt">
+            <article class="resto-prev">
+             <div class="resto-prev__image"> 
+                <img src="/images/restaurant/alafrancaise.jpg" alt="A la française" >
+             </div>
+                <div class="resto-prev__txt">
                     <h3>A la française</h3>
                     <p>Cité Rouge</p>
                     <i class="far fa-heart"></i>
-                    </div>
                 </div>
             </article>
 
-            <article class="resto">
-                <img class="resto-img" src="images/.jpg" alt="Le délice des sens">
-                <div class="rectangle">Nouveau</div>
-                <div class="resto-txt">
+            <article class="resto-prev">
+             <div class="resto-prev__image">
+                <img src="images/restaurant/ledélice.jpg" alt="Le délice des sens" >
+             </div>
+                <div class="resto-prev__txt">
                     <h3>Le délice des sens</h3>
                     <p>Folie-Méricourt</p>
                     <i class="far fa-heart"></i>
-                    </div>
                 </div>
             </article>
         </div>
@@ -100,18 +101,17 @@
 
 
        <footer>
-        <nav class = "">
-            <img class="logo" src="images/logo/ohmyfood.png" alt="Ohmyfood" />
+        <div class = "nav">
+            <img class="logo" src="img/logo/ohmyfood.png" alt="Ohmyfood" >
             <ul class ="">
               <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
               <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
               <li>Mentions légales</li>
               <li>Partenaire</li>
             </ul>
-       </nav>
+        </div>
        
-       </footer>
-       </div>    
+       </footer>   
     </body>
 
 </html>

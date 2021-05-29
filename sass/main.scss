@@ -1,135 +1,20 @@
-header {
-    width: 100%;
-    height: 63px;
-    background-color: white;
-    &__logo {
-       width: 100%;
-       height: 33px;
-    }
-}
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
 
-.position {
-      width: 100%;
-      height: 50px;
-      background-color: #eaeaea;
-    &__fa-map-maker-alt {
-        width: 13px
-    }
-    &__p {
-      width: 109px;
-    }
-}
+@import "./base/base";
+@import "./base/typography";
 
-.accroche {
-    width: 100%;
-    height: 289px;
-    &__h2 {
-       width: 237px; 
-       height: 54px;
-    }
-    &__p {
-        width: 310px; 
-        height: 40px;
-    }
-    &__button {
-        width: 219px; 
-        height: 51px;
-        border-radius: 30px;
-        text-decoration-color: white;
-    }
-}
+@import "./components/buttons";
 
-.fonction {
-    width: 100%;
-    height: 440px;
-    &__h2 {
-       width: 178px; 
-       height: 21px;
-    }
-    &__step1 {
-        width: 323px; 
-        height: 74px;
-        &__cercles {
-          width: 25px; 
-        }
-        &__fa-mobile-alt {
-          height: 20px;
-        }
-        &__p {
-            width: 178px; 
-            height: 15px;
-         }
-    }
-    &__step2 {
-        width: 323px; 
-        height: 74px;
-        &__cercles {
-          width: 25px; 
-        }
-        &__fa-list-ul {
-          width: 20px;
-          height: 20px;
-        }
-        &__p {
-            width: 178px; 
-            height: 15px;
-        }
-    }
-    &__step3 {
-        width: 323px; 
-        height: 74px;
-        &__cercles {
-          width: 25px; 
-        }
-        &__fa-store {
-          height: 20px;
-        }
-        &__p {
-            width: 178px; 
-            height: 15px;
-        }
-    }
-}
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";
 
-.restos {
-    width:100%;
-    height: 1228px;
-    &__h2 {
-        width: 132px;
-        height: 20px;
-    }
-    &__container-resto {
-    width: 338px;
-    height: 1059px;
-    }
-}
 
-.resto {
-    width: 338px;
-    height: 251px;
-    &__resto-img {
-        width: 100%;
-        height: 174px;
-    }
-    &__rectangle {
-        width: 80px;
-        height: 30px;
-    }
-    &__resto-txt {
-        width: 305px;
-        height: 46px;
-        &__h3 {
-            width: 262px;
-            height: 20px;
-            font-weight:bold;
-        }
-        &__p {
-            width: 262px;
-            height: 20px;
-        }
-        &__fa-heart {
-            width: 26px;
-            height: 26px;
-        }
-    }
-}
+@import "./pages/menu-alafrancaise";
+@import "./pages/menu-lanoteenchantee";
+@import "./pages/menu-lapalettedugout";
+@import "./pages/menu-ledelicedessens";
