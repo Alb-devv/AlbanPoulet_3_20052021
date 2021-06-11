@@ -1,0 +1,25 @@
+//base
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body, html{height:100%;}
+body{
+text-align:center;
+box-sizing: border-box;
+}
+
+#main{
+max-width:1280px;
+min-height:100%;
+margin:0 auto;
+position:relative;
+height: 2263px;
+}
+
+// html font-size ou autre Police

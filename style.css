@@ -12,15 +12,7 @@ text-align:center;
 box-sizing: border-box;
 }
 
-#main{
-max-width:1280px;
-min-height:100%;
-margin:0 auto;
-position:relative;
-height: 2263px;
-}
-
-header {
+.header {
   width: 100%;
   height: 63px;
   display: flex;
@@ -28,7 +20,7 @@ header {
   background-color: white;
 }
 
-header__logo {
+.header__logo {
   font-size: 7rem;
   height: 33px;
 }
@@ -195,6 +187,7 @@ header__logo {
   flex-direction: column;
   background-color: #353535;
   color: white;
+  margin-top: -24px;
 }
 
 .footer__logo {
@@ -213,6 +206,16 @@ header__logo {
   list-style-type: none;
 }
 
+
+
+#main2{
+  max-width:1280px;
+  min-height:100%;
+  margin:0 auto;
+  position:relative;
+  height: 1384px;
+}
+
 .container {
   width: 100%;
   height: 1418px;
@@ -221,6 +224,8 @@ header__logo {
 .resto-menu {
   width: 100%;
   height: 1418px;
+  display: flex;
+  flex-direction: column;
 }
 
 .prev-image {
@@ -230,23 +235,29 @@ header__logo {
 
 .prev-image img{
   width: 100%;
-  height: 216px;
+  height: 255px;
 }
 
 .container-menu {
   width:100%;
   height: 1197px;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
 }
 
 .heading-menu {
   width: 346px;
   height: 37px;
+  display:inline-flex;
+  margin-top: 36px;
 }
 
 
 .heading-menu__title {
   width: 296px;
   height: 37px;
+  display: inline-flex;
 }
 
 .heading-menu fa-heart {
@@ -255,72 +266,148 @@ header__logo {
 }
 
 
-.starters {
+.dishes {
   width: 351px;
   height: 281px;
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 33px;
 }
 
-.starters__heading {
+.dishes__heading {
   width: 82px;
   height: 31px;
 }
 
-.starters-container {
+.dishes__heading title {
+  width: 82px;
+  height: 31px;
+}
+
+.dishes__heading line {
+  width: 41px;
+  height: 4px;
+  color: #99E2D0;
+}
+
+.dishes-container {
   width: 351px;
   height: 236px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.starters-element {
+.dishes-element {
   width: 351px;
   height: 69px;
+  background-color: white;
+  display:inline-flex;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left:10px;
+  border-radius: 15px;
 }
 
-.starters-element__title {
+.dishes-element__title {
   width: 334px;
   height: 22px;
+  display: flex;
 }
 
-.starters-element__line {
-  width: 294px;
+.dishes-element__line {
+  width: 334px;
+  height: 19px;
+  display: inline-flex;
+  justify-content: space-between; 
+
+}
+
+.dishes-element__line + .ingredient {
+  width: 334px;
   height: 19px;
 }
 
-.starters-element__price {
+.dishes-element__line + .price {
   width: 40px;
   height: 19px;
 }
 
-.maindishes 
+.maindishes {
+  width: 351px;
+  height: 281px;
+}
 
-.maindishes__heading
+.maindishes__heading {
+  width: 82px;
+  height: 31px;
+}
 
-.maindishes title
+.maindishes-container {
+  width: 351px;
+  height: 236px;
+}
 
-.maindishes line
+.maindishes-element {
+  width: 351px;
+  height: 69px;
+}
 
-.maindishes-container
+.maindishes-element__title {
+  width: 334px;
+  height: 22px;
+}
 
-.maindishes-container__title
+.maindishes-element__line {
+  width: 294px;
+  height: 19px;
+}
 
-.maindishes-container__line
+.maindishes-element__price  {
+  width: 40px;
+  height: 19px;
+}
 
-maindishes-container__price
+.desserts {
+  width: 351px;
+  height: 281px;
+}
 
-desserts
+.desserts__heading {
+  width: 82px;
+  height: 31px;
+}
 
-desserts__heading
+.desserts-container  {
+  width: 351px;
+  height: 236px;
+}
 
-desserts title
+.desserts-element  {
+  width: 351px;
+  height: 69px;
+}
 
-desserts line
+.desserts-element__title  {
+  width: 334px;
+  height: 22px;
+}
 
-desserts-container
+.desserts-element__line {
+  width: 294px;
+  height: 19px;
+}
 
-desserts-container__title
+.desserts-element__price {
+  width: 40px;
+  height: 19px;
+}
 
-desserts-container__line
-
-desserts-container__price
-
-order
-
+.order {
+  width: 219px;
+  height: 51px;
+  border-radius: 30px;
+  text-decoration-color: white;
+  margin-top: 30px;
+}
