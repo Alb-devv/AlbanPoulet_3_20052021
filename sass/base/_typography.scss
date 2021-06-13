@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: $colour-primary;
+    color: black;;
     font-size: medium;
     line-height: 150%;
 }
@@ -8,8 +8,7 @@ body {
 h1, h2 {
     font-family: 'shrikhand', sans-serif;
     font-weight: 900;
-    font-size: medium;
-    font-style: italic;
+    line-height: normal;
 }
 
 h2 {
@@ -20,4 +19,5 @@ button {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: medium;
+    color: $colour-white;
 }
