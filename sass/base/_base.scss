@@ -1,17 +1,18 @@
+//base
+
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-html {
-    // 10px div by def of 16px
-    font-size: 62.5%;
+body, html{height:100%;}
+body{
+text-align:center;
+box-sizing: border-box;
+background: $colour-white;
 }
 
-body {
-    box-sizing: border-box;
-    background: $colour-secondary;
-}
+// html font-size ou autre Police
