@@ -157,6 +157,7 @@ font-weight: 1;
   border-radius: 30px;
   text-decoration-color: white;
   color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
 .fonction {
@@ -352,6 +353,7 @@ font-weight: 1;
   border-radius: 30px;
   text-decoration-color: white;
   margin-top: 30px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
 .dishes-element {
