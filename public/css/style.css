@@ -326,6 +326,7 @@ font-weight: 1;
   display: inline-flex;
   flex-direction: column;
   margin-top: 33px;
+  justify-content: space-between;
 }
 .dishes-main__heading {
   width: 82px;
@@ -334,18 +335,19 @@ font-weight: 1;
 .dishes-main__heading h3 {
   width: 82px;
   height: 31px;
+  display: flex;
 }
 .dishes-main__heading .line {
   width: 41px;
   height: 4px;
-  color: #99E2D0;
+  background-color: #99E2D0;
 }
 .dishes-main__container {
   width: 351px;
   height: 236px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .dishes-main__btn {
   width: 219px;
@@ -366,6 +368,7 @@ font-weight: 1;
   padding-bottom: 12px;
   padding-left: 10px;
   border-radius: 15px;
+  box-shadow: 0px 10px 30px #E5E5E5;
 }
 .dishes-element__title {
   width: 334px;
