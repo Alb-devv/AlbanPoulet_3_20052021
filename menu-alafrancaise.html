@@ -4,127 +4,162 @@
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Ohmyfood</title>
-       <link rel="stylesheet" href="style.css"/>
+       <link rel="stylesheet" href="/.public/css/style.css"/>
        <link rel="preconnect" href="https://fonts.gstatic.com">
        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
        <script src="https://kit.fontawesome.com/9fcdfaa30b.js" crossorigin="anonymous"></script> 
    </head>
 
    <body>
-       <div id="bloc_page">
+
+    <header class="header">
+        <div class="header__button">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <h1 class="header__logo">
+           ohmyfood
+        </h1>
+    </header>   
+
+    <main class="container">
+
+     <section class="menu-prev">
     
-       <header>
-        <i class="fas fa-arrow-left"></i>
-        <img class="logo" src="images/logo/ohmyfood.png" alt="Ohmyfood" />
-       </header>   
+      <div class= "menu-prev__image">
+       <img src="images/restaurants/alafrancaise.jpg" alt="Restaurant" />
+      </div>
 
-       <Section class= "main-img">
-       <img class="" src="images/logo/.jpg" alt="Restaurant" />
-       </Section>
+      <div class="container-menu">
 
-       <section class="resto-menu">
+      <div class="container-menu__heading">
+        <h2>À la française</h2>     <!-- H1? non c Logo h1-->
+        <i class="far fa-heart"></i>
+      </div>
 
-        <div class="heading-menu">
-            <h2 class ="">À la française</h2>     <!-- H1? -->
-            <i class="far fa-heart"></i>
+      <div class="dishes-main">
+
+        <div class="dishes-main__heading">
+          <h3>ENTRÉES</h3>    
+          <div class="line"></div>
         </div>
-        
 
-        <div class="container-menu">
+        <div class="dishes-main__container" >
 
-            <article class="container-dishes">
-                <div class="heading-dishes">
-                    <h3 class ="">Entrées</h3>    
-                    <div class="line"></div>
+            <article class="dishes-element">
+                <h4 class="dishes-element__title">Tartare de poulpe acidulé</h4>
+                <div class="dishes-element__line" >
+                  <p class="ingredient">Aux zestes d'orange</p>
+                  <p class="price">25€</p>
                 </div>
-
-                <article class="">
-                    <h4>Tartare de poulpe acidulé</h4>
-                    <p>Aux zestes d'orange</p>
-                    <p>25€</p>
-                </article>
-
-                <article class="">
-                    <h4>Velouté de légumes d'antan</h4>
-                    <p>Carotte, panais, topinambour</p>
-                    <p>35€</p>
-                </article>
-
-                <article class="">
-                    <h4>Soupe à l'oignon</h4>
-                    <p>Revisitée</p>
-                    <p>20€</p>
-                </article>
             </article>
 
-            <article class="container-mdishes">
-                <div class="heading-mdishes">
-                    <h3 class ="">PLATS</h3>     
-                    <div class="line"></div>
+            <article class="dishes-element">
+                <h4 class="dishes-element__title">Velouté de légumes d'antan</h4>
+                <div class="dishes-element__line" >
+                  <p class="ingredient">Carotte, panais, topinambourl</p>
+                  <p class="price">35€</p>
                 </div>
+             </article>
 
-                <article class="">
-                    <h4>Coquilles Saint-Jacques</h4>
-                    <p>Accompagnées d'une purée de panais</p>
-                    <p>40€</p>
+             <article class="dishes-element">
+                <h4 class="dishes-element__title">Soupe à l'oignon</h4>
+                <div class="dishes-element__line" >
+                  <p class="ingredient">Revisitée</p>
+                  <p class="price">20€</p>
+                </div>
+             </article>
+            </div>
+          </div>
+
+          <div class="dishes-main" >
+
+            <div class="dishes-main__heading">
+              <h3>PLATS</h3>    
+              <div class="line"></div>
+            </div>
+    
+            <div class="dishes-main__container" >
+
+                <article class="dishes-element">
+                    <h4 class="dishes-element__title">Coquilles Saint-Jacques</h4>
+                    <div class="dishes-element__line" >
+                    <p class="ingredient">Accompagnées d'une purée de panais</p>
+                    <p class="price">40€</p>
+                    </div>
                 </article>
 
-                <article class="">
-                    <h4>Magret de canard</h4>
-                    <p>Et parmentier de pommes de terre</p>
-                    <p>35€</p>
+                <article class="dishes-element">
+                    <h4 class="dishes-element__title">Magret de canard</h4>
+                    <div class="dishes-element__line" >
+                    <p class="ingredient">Et parmentier de pommes de terre</p>
+                    <p class="price">35€</p>
+                    </div>
                 </article>
 
-                <article class="">
-                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>
-                    <p>Sur son lit de gnocchis aux légumes</p>
-                    <p>44€</p>
+                <article class="dishes-element">
+                    <h4 class="dishes-element__title">Pigeonneau d’Ille-et-Vilaine</h4>
+                    <div class="dishes-element__line" >
+                    <p class="ingredient">Sur son lit de gnocchis aux légumes</p>
+                    <p class="price">44€</p>
+                    </div>
                 </article>
+            </div>
+        </div>    
+             
+           <div class="dishes-main" >
+
+            <div class="dishes-main__heading">
+             <h3>DESSERTS</h3>    
+             <div class="line"></div>
+            </div>
+
+            <div class="dishes-main__container" >
+
+             <article class="dishes-element">
+                <h4 class="dishes-element__title">Pétales de violettes glacés</h4>
+                <div class="dishes-element__line" >
+                <p class="ingredient">Et purée de noisettes</p>
+                <p class="price">18€</p>
+                </div>
+             </article>
+
+            <article class="dishes-element">
+                <h4 class="dishes-element__title">Fondant au chocolat</h4>
+                <div class="dishes-element__line" >
+                <p class="ingredient">Revisité</p>
+                <p class="price">22€</p>
+                </div>
             </article>
 
-            <article class="container-desserts">
-                <div class="heading-desserts">
-                    <h3 class ="">Desserts</h3>     <! -- H1? -->
-                    <div class="line"></div>
+            <article class="dishes-element">
+                <h4 class="dishes-element__title">Millefeuille croustillant</h4>
+                <div class="dishes-element__line" >
+                <p class="ingredient">Myrtilles et pâte d’amande</p>
+                <p class="price">23€</p>
                 </div>
-
-                <article class="">
-                    <h4>Pétales de violettes glacés</h4>
-                    <p>Et purée de noisettes</p>
-                    <p>18€</p>
-                </article>
-
-                <article class="">
-                    <h4>Fondant au chocolat</h4>
-                    <p>Revisité</p>
-                    <p>22€</p>
-                </article>
-
-                <article class="">
-                    <h4>Millefeuille croustillant</h4>
-                    <p>Myrtilles et pâte d’amande</p>
-                    <p>23€</p>
-                </article>
             </article>
+      </div>
+  </div>
 
-            <button class="">Commander</button>
-        </div>
-        </section>
+             <button class="dishes-main__btn">Commander</button>
+  </div>
+</section>
+</main>
 
-
-       <footer>
-        <nav class = "">
-            <img class="logo" src="images/logo/ohmyfood.png" alt="Ohmyfood" />
-            <ul class ="">
-              <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-              <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-              <li>Mentions légales</li>
-              <li>Partenaire</li>
-            </ul>
-       </nav>
-       
-       </footer>
-       </div>    
-    </body>
+   <footer class="footer">
+    <h1 class="footer__logo">
+      ohmyfood
+    </h1>
+    <nav class="nav">
+    <ul>
+      <li class="nav__link"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+      <li class="nav__link"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+      <li class="nav__link">Mentions légales</li>
+      <li class="nav__link">Partenaire</li>
+    </ul>
+    </nav>
+   </footer>
+          
+</body>
 
 </html>
