@@ -423,13 +423,46 @@ font-weight: 1;
   display: inline-flex;
   justify-content: space-between;
 }
-.dishes-element__line ingredient {
+.dishes-element__line .ingredient {
   width: 334px;
   height: 19px;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 15px;
 }
-.dishes-element__line price {
+.dishes-element__line .price {
   width: 40px;
   height: 19px;
+  padding-right: 20px;
+  font-weight: 600;
+  font-size: 15px;
 }
+
+.dishes-element__check {
+  display: none;
+  width: 59px;
+  height: 70px;
+  background-color: #99E2D0;
+}
+
+.dishes-element__check--selection {
+   display: inline-flex; 
+}
+
+.dishes-element__check .fa-check-circle {
+  font-size:22px;
+}
+
+// Zarb
+
+
+.dishes-element__title--selection {
+  width: 291px;;
+}
+
+.dishes-element__line--selection {
+  width: 291px;;
+}
+
 
 /*# sourceMappingURL=style.css.map */

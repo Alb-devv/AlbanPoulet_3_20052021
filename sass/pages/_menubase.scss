@@ -130,19 +130,43 @@
         width: 334px;
         height: 22px;
         display: flex;
+        &--selection {
+            width: 291px;
+        }
     }
     &__line {
         width: 334px;
         height: 19px;
         display: inline-flex;
         justify-content: space-between; 
-        & ingredient {
+        &--selection {
+            width: 291px;
+        }
+        & .ingredient {
             width: 334px;
             height: 19px;
+            text-align: left;
+            font-weight: lighter;
+            font-size: 15px;
         }
-        & price {
+        & .price {
             width: 40px;
             height: 19px;
+            padding-right: 20px;
+            font-weight: 600;  
+            font-size: 15px;
+        }
+    }
+    &__check {
+        display: none;
+        width: 59px;
+        height: 70px;
+        background-color: #99E2D0;
+        &.fa-check-circle {
+            font-size:22px;
+        }
+        &--selection  {
+            display: inline-flex;
         }
     }
 }
