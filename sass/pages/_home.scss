@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .position {
     width: 100%;
@@ -62,6 +67,8 @@
       border-radius: 30px;
       text-decoration-color: white;
       background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+      box-shadow: 2px 4px 7px 0px #C9C9C9;
+      border: transparent;
     }
 }
   
@@ -70,24 +77,26 @@
 .fonction {
     width: 100%;
     height: 440px;
-    padding-top: 50px;
+    padding-top: 48px;
     &__heading {
         width: 180px;
-        height: 24px;
         margin-bottom: 30px;
+        font-size: 24px;
+        font-weight: 1000;
+        margin-left: 20px;
     }
     &__step {
         width: 338px;
         height: 274px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-direction: column;
     }
 }
   
 .step-container {
     width: 324px;
-    height: 75px;
+    min-height: 74px;
     background-color: #f6f6f6;
     border-radius: 20px;
     display: inline-flex;
@@ -95,20 +104,32 @@
     justify-content: space-evenly;
     margin-left: 32px;
     margin-bottom: 24px;
+    box-shadow: 1px 2px 10px 2px #E5E5E5;
+    &__button {
+        text-decoration: none;
+        display: inline-flex;
+    }
     &__circle {
+        position: absolute;
+        left: 25px;
+        margin-top: 4px;
+        background: #9356DC;
+        border-radius: 100%;
+        color: #fff;
+        height: 25px;
         width: 25px;
+        padding: 1px 8px;
+        font-weight: 500;
     }
-    &__fa-mobile-alt {
-        height: 20px;
+    &.step-container .items {
+        color: #7E7E7E;
+        font-size: 20px;
+        text-align: left;
+        padding-right: 46px;
+        padding-top: 3px;
     }
-    &__fa-list-ul {
-        height: 20px;
-    }
-    &__fa-store {
-        height: 20px;
-    }
-    &____line {
-        width: 25px;
+    &__line {
+        width: auto;
     }
 }
   
@@ -138,13 +159,15 @@
     height: 251px;
     width: 100%;
     border-radius: 15px;
-    box-shadow: 0px 0px 5px 0px lightgrey;
+    box-shadow: 1px 3px 6px 0px #d3d3d3;
     margin-bottom: 25px;
     margin-left: 0px;
     background-color:white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
     &__image {
         width: 100%;
         height: 176px;
@@ -153,34 +176,73 @@
            width: 100%;
            height: 176px;
            border-radius: 15px 15px 0px 0px;
+           position: relative;
         }
-    }
-    &__btn {
+        & .btn {
         width: 80px;
         height: 30px;
-    }
-    &__txt {
-        width: 305px;
-        height: 46px;
-        display: inline-flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        text-align: left;
-        margin-bottom: 18px;
-        margin-left: 10px;
-        & h4 {
-            width: 262px;
-            height: 20px;
-            font-weight: bold;
-        }
-        & p {
-            width: 262px;
-            height: 20px;
-        }
-        & fa-heart {
-            width: 26px;
-            height: 26px;
+        position: absolute;
+        background-color: #99E2D0;
+        z-index: 1;
+        margin: 13px;
+        top: 0;
+        right: 0;
+        border-radius: 3px;
+        color: #008766;
         }
     }
+    &__content {
+        position: relative;
+        display: flex;
+        & .prev-txt {
+            width: 312px;
+            height: 46px;
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+            margin-bottom: 18px;
+            margin-left: 10px;
+            position: relative;
+            & h4 {
+                width: 262px;
+                height: 20px;
+                font-weight: bold;
+            }
+            & p {
+                width: 262px;
+                height: 20px;
+            }
+        }
+        & .heart {
+            position: relative;
+            & .fa-heart {
+              position: absolute;
+              right: 0;
+              bottom: 25px;
+              color: #2b2b2b;
+              font-size: 24px;
+              transition: 0.3s 0s ease-in-out;
+              &:hover {
+                opacity: 0;
+            }
+        }
+        & .hover-icon {
+            position: absolute;
+            right: 0;
+            opacity: 0;
+            bottom: 25px;
+            font-size: 24px;
+            &:hover {
+              background: linear-gradient(#9356dc, #ff79da);
+              -webkit-text-fill-color: transparent;
+              -webkit-background-clip: text;
+              background-clip: text;
+              opacity: 1;
+              z-index: 9;
+            }
+        }
+    }
+}
 }
