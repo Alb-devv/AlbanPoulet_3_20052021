@@ -59,11 +59,17 @@ button {
 }
 .header__logo {
   width: 100%;
-  height: 35px;
+  font-size: 30px;
 }
+
+.header__logo--shifted {
+  margin-right: 20px;
+}
+
 .header__button {
-  width: 27px;
-  height: 23px;
+  font-size: 19px;
+  width: auto;
+  margin-left: 20px;
 }
 
 .footer {
@@ -329,7 +335,8 @@ button {
   color: #008766;
 }
 
-.resto-prev__image btn--disabled {
+
+.resto-prev__image .btn--disabled {
   display: none;
 }
 
@@ -433,19 +440,68 @@ button {
   margin-top: 32px;
   font-size: large;
   font-weight: 100;
+  z-index: 1;
 }
 .container-menu__heading h2 {
   width: 296px;
   height: 37px;
   display: inline-flex;
   font-weight: lighter;
+  padding-left: 5px;
 }
-.container-menu__heading .fa-heart {
-  width: 51px;
-  font-size: x-large;
-  display: flex;
-  align-self: center;
+
+.container-menu__heading .heart {
+  position: relative;
 }
+
+.container-menu__heading .heart .heart-menu {
+  bottom: 10px;
+  left: 20px;
+  background: #d9d9d9;
+}
+
+.heart-menu {
+  bottom: 10px;
+  left: 20px;
+  background: #d9d9d9;
+}
+
+.container-menu__heading .heart .fa-heart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #2b2b2b;
+  font-size: 25px;
+ transition: 0.3s 0s ease-in-out;
+}
+
+.container-menu__heading .heart .hover-icon {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  bottom: 0;
+  font-size: 25px;
+}
+
+.container-menu__heading .heart .hover-icon:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 1;
+  z-index: 9;
+}
+
+
+.container-menu__heading .heart .fa-heart:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 1;
+  z-index: 9;
+}
+
 
 .dishes-main {
   width: 351px;
