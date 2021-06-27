@@ -1,16 +1,15 @@
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
+
+/*
 //mixin btn {
 //    color: $colour-white;
 //   background: $colour-primary;
 //}
-
-
-//mixin ellipsis() {
-//    overflow: hidden;
-//    white-space: nowrap;
-//    text-overflow: ellipsis;
-//}
-
 // mixin button() {
     flex: 1 0 auto;
     margin-bottom: 20px;
@@ -38,3 +37,4 @@
   letter-spacing: 0.03rem;
   box-shadow: $shadow;
 //}
+*/

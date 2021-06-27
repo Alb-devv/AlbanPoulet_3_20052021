@@ -1,10 +1,10 @@
-@import "./utils/variables";
+@import "./utils/_variables";
 // @import "./utils/functions";
-// @import "./utils/mixins";
+@import "./utils/_mixins";
 // @import "./utils/extensions";
 
-@import "./base/base";
-@import "./base/typography";
+@import "./base/_base";
+@import "./base/_typography";
 
 //@import "./components/buttons";
 
@@ -13,8 +13,8 @@
 // @import "./layout/container";
 
 
-@import "./pages/home";
-@import "./pages/menubase";
+@import "./pages/_home";
+@import "./pages/_menubase";
 // @import "./pages/menu-alafrancaise";
 // @import "./pages/menu-lanoteenchantee";
 // @import "./pages/menu-lapalettedugout";

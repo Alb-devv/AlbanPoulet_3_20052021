@@ -570,94 +570,116 @@ button {
   width: 351px;
   height: 69px;
   background-color: white;
-  display:inline-flex;
-  flex-direction: column;
+  display:flex;
+  flex-direction: row;
   border-radius: 15px;
   box-shadow: 0px 10px 30px #E5E5E5;
 }
-.dishes-element--selection {
-  flex-direction: initial;
-  justify-content: space-between;
+
+.dishes-element:hover .dishes-element-price {
+  transform: translateX(-60px);
+  transition: 0.5s ease-out;
+}
+
+.dishes-element:hover .dishes-element-checkbox {
+  animation: checkbox 0.5s ease-out forwards;
+  animation-fill-mode: both;
+  transform: scale(0);
+  transform-origin: right;
+  overflow: visible;
+}
+
+.dishes-element:hover .btn-circle {
+  animation: check ease-out;
+  transform: rotate(0deg);
+  transition: transform 0.6s;
+}
+
+.dishes-element-price {
+  display: inline-block;
+  position: relative;
+  right: 50px;
+  top: 35px;
+  font-weight: bold;
+  background: #fff;
+  width: 20%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.dishes-element .dishes-element-price span {
+      margin: 0 10px; 
+}
+
+.dishes-element .dishes-element-checkbox {
+  position: relative;
+  background-color: #99e2d0;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: auto;
+  width: 60px;
+  right: 80px;
+}
+
+.dishes-element .btn-circle {
+  transform: rotate (-180deg);
 }
 
 .dishes-element-txt {
-  width: 334px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 75px;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dishes-element-txt h4 {
+  width: 65%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.dishes-element-txt p {
+  font-size: 0.95rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 60%;
+}
+
+i.fas.fa-check-circle {
+  position: relative;
+  top: 25px;
+  color: #fff;
+  padding: 0px 20px;
+  opacity: 1; 
+}
+
+.aside-button {
+  flex: 1 0 auto;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border-radius: 15px;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 5px 15px 0 #afafafb0;
+  transition: 0.2s; 
   height: 69px;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   padding: 10px;
 }
 
-.dishes-element-txt--selection {
-  width: 271px;
+.aside-button:hover {
+  background: #fff;
+  box-shadow: 2px 2px 10px 2px #d6d5d6;
 }
 
-.dishes-element-txt__title {
-  width: 334px;
-  height: 22px;
-  display: flex;
-}
-
-.dishes-element-txt__title--selection {
-  width: 271px;
-}
-
-.dishes-element-txt__line {
-  width: 334px;
-  height: 19px;
-  display: inline-flex;
-  justify-content: space-between; 
-}
-
-.dishes-element-txt__line--selection {
-  width: 271px;
-}
-
-.dishes-element-txt__line .ingredient {
-  width: 334px;
-  height: 19px;
-  text-align: left;
-  font-weight: lighter;
-  font-size: 15px;
-  display: inline-flex;
-  align-items: center;
-}
-
-.dishes-element-txt__line .price {
-  width: 40px;
-  height: 19px;
-  padding-right: 12px;
-  font-weight: 600;  
-  font-size: 15px;
-  display: inline-flex;
-  align-items: center;
-  }
-
-.dishes-element-txt__line .price--selection {
-    padding-right: 60px;
-}
-
-
-.dishes-element-check {
-  display: none;
-  width: 59px;
-  height: 70px;
-  background-color: #99E2D0;
-  border-radius: 0px 15px 15px 0px;
-}
-
-.dishes-element-check--selection {
-  display: inline-flex;
-}
-
-.dishes-element-check .fa-check-circle {
-  font-size:22px;
-  color: white;
-  align-content: center;
-  display: inline-flex;
-  align-self: center;
-  padding: 17px;
-}
 
 /*# sourceMappingURL=style.css.map */
