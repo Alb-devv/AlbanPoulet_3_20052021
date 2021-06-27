@@ -10,96 +10,121 @@
        <script src="https://kit.fontawesome.com/9fcdfaa30b.js" crossorigin="anonymous"></script> 
    </head>
 
-  <body>
-    
-    <header class="header">
-      <div class="header__button">
-        <i class="fas fa-arrow-left"></i>
+   <body>
+
+    <div class="loader">
+      <div class="loader-container">
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
+         <div class="block"></div>
       </div>
-      <h1 class="header__logo">
-         ohmyfood
-      </h1>
-    </header>   
-
-  <main class="container container--large">
-
-    <section class="menu-prev menu-prev--large ">
-
-     <div class= "menu-prev__image">
-      <img src="images/restaurants/lanote.jpg" alt="Restaurant" />
      </div>
 
-     <div class="container-menu container-menu--large" >
+     <header class="header fadein">
+      <div class="header__button">
+        <a href="home.html"><i class="fas fa-arrow-left"></i></a>
+      </div>
+      <h1 class="header__logo header__logo--shifted">
+         ohmyfood
+      </h1>
+  </header>      
+
+   <main class="container container--large fadein2">
+
+    <section class="menu-prev menu-prev--large">
+
+     <div class= "menu-prev__image">
+      <img src="images/restaurants/lapalette.jpg" alt="Restaurant" />
+     </div>
+
+     <div class="container-menu container-menu--large">
 
       <div class="container-menu__heading">
-        <h2>La note enchantée</h2>
-        <i class="far fa-heart"></i>
+        <h2>La note enchantée</h2>  
+        <div class="heart heart-menu">
+          <i class="far fa-heart"></i>
+          <i class="fas fa-heart hover-icon"></i>
+        </div>
       </div>
 
-     <div class="dishes-main dishes-main--elong1" >
+      <div class="dishes-main dishes-main--elong1">
 
         <div class="dishes-main__heading">
           <h3>ENTRÉES</h3>    
           <div class="line"></div>
         </div>
 
-        <div class="dishes-main__container dishes-main__container--long1 " >
-                  
+        <div class="dishes-main__container dishes-main__container--long1" >
+  
          <article class="dishes-element">
-          <div class="dishes-element-txt">
-           <h4 class="dishes-element-txt__title">Ravioles de foie gras </h4>
-           <div class="dishes-element-txt__line" >
-            <p class="ingredient">Accompagnés de leur crème à la truffe</p>
-            <p class="price">25€</p>
-           </div>
+          <div class="dishes-element-txt aside-button">
+            <h4>Ravioles de foie gras </h4>
+            <p>Accompagnés de leur crème à la truffe</p>
           </div>
-          <div class="dishes-element-check">
+          <div class="dishes-element-price" >
+              <span>25€</span>
+          </div>
+          <div class="dishes-element-checkbox">
             <i class="fas fa-check-circle"></i>
           </div>
-         </article>
+        </article>
 
          <article class="dishes-element">
-          <div class="dishes-element-txt">
-            <h4 class="dishes-element-txt__title">Caviar osciètre</h4>
-            <div class="dishes-element-txt__line" >
-              <p class="ingredient">Sur blini à la farine de blé noir</p>
-              <p class="price">35€</p>
-            </div>
+          <div class="dishes-element-txt aside-button">
+            <h4>Caviar osciètre </h4>
+            <p>Sur blini à la farine de blé noir</p>
           </div>
-          <div class="dishes-element-check">
+          <div class="dishes-element-price" >
+              <span>35€</span>
+          </div>
+          <div class="dishes-element-checkbox">
             <i class="fas fa-check-circle"></i>
           </div>
-         </article>
+        </article>
+      
+      <article class="dishes-element">
+        <div class="dishes-element-txt aside-button">
+          <h4>Homard et espuma de potiron</h4>
+          <p>Mariné aux zestes d'orange</p>
+        </div>
+        <div class="dishes-element-price" >
+            <span>20€</span>
+        </div>
+        <div class="dishes-element-checkbox">
+          <i class="fas fa-check-circle"></i>
+        </div>
+      </article>
 
-         <article class="dishes-element">
-          <div class="dishes-element-txt">
-            <h4 class="dishes-element-txt__title">Homard et espuma de potiron</h4>
-            <div class="dishes-element-txt__line" >
-              <p class="ingredient">Mariné aux zestes d'orange</p>
-              <p class="price">20€</p>
-            </div>
-          </div>
-          <div class="dishes-element-check">
-            <i class="fas fa-check-circle"></i>
-          </div>
-         </article>
+      <article class="dishes-element">
+        <div class="dishes-element-txt aside-button">
+          <h4>Foie gras de canard cuit entier</h4>
+          <p>Confiture de figue et pain toasté</p>
+        </div>
+        <div class="dishes-element-price" >
+            <span>35€</span>
+        </div>
+        <div class="dishes-element-checkbox">
+          <i class="fas fa-check-circle"></i>
+        </div>
+      </article>
 
-         <article class="dishes-element">
-          <div class="dishes-element-txt">
-            <h4 class="dishes-element-txt__title">Foie gras de canard cuit entier</h4>
-            <div class="dishes-element-txt__line" >
-              <p class="ingredient">Confiture de figue et pain toasté</p>
-              <p class="price">35€</p>
-            </div>
-          </div>
-          <div class="dishes-element-check">
-            <i class="fas fa-check-circle"></i>
-          </div>
-         </article>
-       </div>
-      </div>
+    </div>
+  </div>
 
-      <div class="dishes-main" >
+      <div class="dishes-main dishes-main--plats" >
 
         <div class="dishes-main__heading">
           <h3>PLATS</h3>    
@@ -107,45 +132,46 @@
         </div>
 
         <div class="dishes-main__container" >
-                    
+
                 <article class="dishes-element">
-                  <div class="dishes-element-txt">
-                    <h4 class="dishes-element-txt__title">Noix de coquilles Saint-Jacques</h4>
-                    <div class="dishes-element-txt__line" >
-                    <p class="ingredient">Sur lit de purée de céleri-rave</p>
-                    <p class="price">40€</p>
-                    </div>
+                  <div class="dishes-element-txt aside-button">
+                    <h4>Noix de coquilles Saint-Jacques</h4>
+                    <p>Sur lit de purée de céleri-rave</p>
                   </div>
-                  <div class="dishes-element-check">
+                  <div class="dishes-element-price" >
+                      <span>40€</span>
+                  </div>
+                  <div class="dishes-element-checkbox">
                     <i class="fas fa-check-circle"></i>
                   </div>
                 </article>
 
                 <article class="dishes-element">
-                  <div class="dishes-element-txt">
-                    <h4 class="dishes-element-txt__title">Langoustine poêlée</h4>
-                    <div class="dishes-element-txt__line" >
-                    <p class="ingredient">Purée de patate douce</p>
-                    <p class="price">35€</p>
-                    </div>
+                  <div class="dishes-element-txt aside-button">
+                    <h4>Langoustine poêlée</h4>
+                    <p>Purée de patate douce</p>
                   </div>
-                  <div class="dishes-element-check">
+                  <div class="dishes-element-price" >
+                      <span>35€</span>
+                  </div>
+                  <div class="dishes-element-checkbox">
                     <i class="fas fa-check-circle"></i>
                   </div>
                 </article>
 
                 <article class="dishes-element">
-                  <div class="dishes-element-txt">
-                    <h4 class="dishes-element-txt__title">Mijoté de queue de boeuf</h4>
-                    <div class="dishes-element-txt__line" >
-                    <p class="ingredient">Et riz sauvage aux zestes de citron</p>
-                    <p class="price">44€</p>
-                    </div>
+                  <div class="dishes-element-txt aside-button">
+                    <h4>Mijoté de queue de boeuf </h4>
+                    <p>Et riz sauvage aux zestes de citron</p>
                   </div>
-                  <div class="dishes-element-check">
+                  <div class="dishes-element-price" >
+                      <span>44€</span>
+                  </div>
+                  <div class="dishes-element-checkbox">
                     <i class="fas fa-check-circle"></i>
                   </div>
                 </article>
+
          </div>
       </div>
 
@@ -159,52 +185,54 @@
           <div class="dishes-main__container" >
                     
                 <article class="dishes-element">
-                  <div class="dishes-element-txt">
-                    <h4 class="dishes-element-txt__title">Macaron noisette et chocolat</h4>
-                    <div class="dishes-element-txt__line" >
-                    <p class="ingredient">Glace au caramel brun et sel de Guérande</p>
-                    <p class="price">18€</p>
-                    </div>
+                  <div class="dishes-element-txt aside-button">
+                    <h4>Macaron noisette et chocolat</h4>
+                    <p>Glace au caramel brun et sel de Guérande</p>
                   </div>
-                  <div class="dishes-element-check">
+                  <div class="dishes-element-price" >
+                      <span>18€</span>
+                  </div>
+                  <div class="dishes-element-checkbox">
                     <i class="fas fa-check-circle"></i>
                   </div>
                 </article>
 
+
                 <article class="dishes-element">
-                  <div class="dishes-element-txt">
-                    <h4 class="dishes-element-txt__title">Baba au rhum revisité</h4>
-                    <div class="dishes-element-txt__line" >
-                    <p class="ingredient">Avec son coulis de citron</p>
-                    <p class="price">22€</p>
-                    </div>
+                  <div class="dishes-element-txt aside-button">
+                    <h4>Baba au rhum revisité </h4>
+                    <p>Avec son coulis de citron</p>
                   </div>
-                  <div class="dishes-element-check">
-                    <i class="fas fa-check-circle"></i>
+                  <div class="dishes-element-price" >
+                    <span>22€</span>
+                  </div>
+                  <div class="dishes-element-checkbox">
+                    <i class="fas fa-check-circle btn-circle"></i>
                   </div>
                 </article>
 
+
                 <article class="dishes-element">
-                  <div class="dishes-element-txt">
-                    <h4 class="dishes-element-txt__title">Tarte au citron meringuée</h4>
-                    <div class="dishes-element-txt__line" >
-                    <p class="ingredient">Déstructurée</p>
-                    <p class="price">23€</p>
-                    </div>
-                  </div>
-                  <div class="dishes-element-check">
-                    <i class="fas fa-check-circle"></i>
-                  </div>
+                 <div class="dishes-element-txt aside-button">
+                   <h4>Tarte au citron meringuée </h4>
+                   <p>Déstructurée</p>
+                 </div>
+                 <div class="dishes-element-price" >
+                      <span>23€</span>
+                 </div>
+                 <div class="dishes-element-checkbox">
+                    <i class="fas fa-check-circle btn-circle"></i>
+                 </div>
                 </article>
           </div>
       </div>
 
             <button class="dishes-main__btn">Commander</button>
-     </div>
+        </div>
     </section>
-  </main>
+   </main>
 
-      <footer class="footer">
+      <footer class="footer fadein3">
         <h1 class="footer__logo">
           ohmyfood
         </h1>
@@ -220,5 +248,5 @@
        </footer>
               
     </body>
-    
+
 </html>
