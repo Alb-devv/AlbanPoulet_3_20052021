@@ -17,20 +17,24 @@ a, a:visited {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    box-shadow: inset 0px 2px 2px 0px #CECECE;
 }
 
 .position-element {
     width: auto;
     height: 24px;
     display: inline-flex;
-    &__fas {
-       width: 13px;
-       margin-right: 22px;
+    &.fas .fa-map-marker-alt {
+        font-size: 16px;
+        margin-right: 20px;
+        color: #353535;
+        align-self: center;
     }
     &__city {
         width: auto;
-        font-weight: 600;
+        font-weight: 500;
         padding-right: 28px;
+        font-size: 16px;
     }
 }
 
@@ -70,6 +74,10 @@ a, a:visited {
       background: linear-gradient(to bottom right, #FF79DA, #9356DC);
       box-shadow: 2px 4px 7px 0px #C9C9C9;
       border: transparent;
+      &:hover {
+            filter: brightness(120%);
+            box-shadow: 2px 4px 7px 3px #897f7f;
+      }
     }
 }
   
@@ -113,6 +121,10 @@ a, a:visited {
         height: 100%;
         &.btn-hover:hover {
             background: #f5edff;
+            border-radius: 20px;
+            &.step-container .step-container .items {
+                color:#9356DC;
+            }
         }
     }
     &__circle {
@@ -137,11 +149,11 @@ a, a:visited {
         width: auto;
         padding-right: 10px;
     }
+    &:hover .items {
+        color:#9356DC;
+    }
 }
 
-.btn-hover:hover {
-    background: #f5edff;
-}
 
 .restos {
     width: 100%;
@@ -152,10 +164,12 @@ a, a:visited {
     padding-top: 54px;
     align-items: center;
     &__heading {
-       width: 132px;
+       width: 100%;
        height: 20px;
        margin-bottom: 24px;
        font-size: x-large;
+       text-align: left;
+       padding-left: 20px;
     }
     &__container {
        width: 338px;
@@ -186,6 +200,7 @@ a, a:visited {
            height: 176px;
            border-radius: 15px 15px 0px 0px;
            position: relative;
+           object-fit: cover;
         }
         & .btn {
         width: 80px;
@@ -206,6 +221,7 @@ a, a:visited {
     &__content {
         position: relative;
         display: flex;
+        margin-top: 10px;
         & .prev-txt {
             width: 312px;
             height: 46px;
@@ -215,7 +231,7 @@ a, a:visited {
             justify-content: space-between;
             text-align: left;
             margin-bottom: 18px;
-            margin-left: 10px;
+            margin-left: 13px;
             position: relative;
             & h4 {
                 width: 262px;
@@ -257,4 +273,222 @@ a, a:visited {
         }
     }
 }
+}
+
+
+
+@media screen and (min-width: 680px) {
+ 
+  .containerh {
+    height: auto
+  }
+
+
+  .accroche-element {
+    width: auto;
+    &__heading {
+      font-size: 28px;
+      width: 100%;
+    }
+  }
+
+  .fonction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__heading {
+      margin-left: 0px;
+      margin-bottom: 40px;
+      font-size: 26px;
+    }
+    &__step {
+      height: auto;
+    }
+  }
+
+  .step-container:hover {
+    background:#f5edff;
+  }
+
+  .step-container__circle {
+    position:unset;
+  }
+
+.restos {
+  height:auto;
+}
+
+  .restos__heading {
+    text-align:center;
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
+
+    .restos__container {
+      width: 70%;
+      height: auto;
+      margin: 0 auto;
+      .menu_title h2 {
+        font-size: 1.3rem;
+        padding-top: 5px;
+      }
+      .menu_title h3 {
+        font-size: 1.05rem;
+      }
+      h2 {
+        padding: 45px;
+      }
+    }
+
+   .resto-prev {
+     width:100%;
+     height: 351px;
+     &__image {
+       height: auto;
+       & img {
+        height: 276px;
+       }
+     }
+   }
+
+ .restos__heading {
+    text-align: center;
+ }
+.step-container {
+  padding: 20px;
+}
+
+ .step-container__circle {
+   position: unset;
+ }
+
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .containerh {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+
+
+.step-container__circle {
+        position: unset;
+        left: 25px;
+        margin-top: 4px;
+        background: #9356dc;
+        border-radius: 100%;
+        color: #fff;
+        height: 25px;
+        width: 25px;
+        padding: 1px 8px;
+        font-weight: 500;
+      }
+
+.step-container__line {
+        font-size: 18px;
+}
+
+  .fonction {
+    width: 50%;
+    height: 440px;
+    padding: 30px;
+    padding-top: 48px;
+  }
+
+.fonction__heading {
+    width: 180px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 1000;   
+    text-align: center;
+    display: flex;
+    margin-left: 50px;
+}
+  
+  .restos {
+      &__heading {
+        padding-left: 20px;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+      &__container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+  }
+  
+  .resto-prev {
+        width: 40%;
+        height: auto;
+      &__image {
+        height: auto;
+        & img {
+        height: 360px;
+        }
+        &.btn {
+          width: 120px;
+          height: 40px;
+          padding: 8px;
+          font-size: 1.4rem;
+        }  
+      }
+      &__content {
+        margin-top: 20px;
+        height: 100px;
+        & .prev-txt {
+          height: auto;
+          & p {
+            font-size: 1.5rem;
+          }
+        }
+        &.heart {
+          margin-bottom: 50px;
+        }
+      }
+  }
+
+
+  
+  .accroche {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    height: 440px;
+    padding-top: 48px;
+  }
+
+  .accroche-element {
+    width: 80%;
+    height: auto;
+    &__heading {
+      width: auto;
+      height: 300px;
+      font-size: 30px;
+    }
+    &__byline {
+      width: auto;
+      height: 40px;
+      font-weight: 1;
+      margin-bottom: 0px;
+      font-size: 22px;
+    }
+    &__btn {
+      margin-bottom: 80px;
+    }
+  }
+
+  .restos__container h4 {
+    font-size: 1.5rem;
+  }
+
 }
