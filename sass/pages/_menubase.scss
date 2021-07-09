@@ -170,12 +170,13 @@
 
 
 
-.dishes-element {
-    width: 351px;
+/* .dishes-element {
     height: 69px;
     background: white;
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 15px;
     box-shadow: 0px 10px 30px #E5E5E5;
     &:hover .dishes-element-price {
@@ -228,6 +229,82 @@
     }
 }
 
+*/
+
+.dishes-element {
+    height: 69px;
+    background: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px #E5E5E5;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover { 
+      .dishes-element-content {
+        width:80%;
+        + .dishes-element-checkbox {
+          width: 20%;
+          transform: scale(1);
+          .fa-check-circle {
+            animation: check-rotate 800ms linear both;
+          }
+        }
+      }
+    }
+}
+
+.dishes-element-content {
+    width: 100%;
+    transition: all 1s;
+    cursor: pointer;
+    &__title {
+        padding-left: 1rem;
+        text-align: justify;
+        & h4 {
+            font-size: 1rem;
+        }
+    }
+    &__byline {
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 1rem;
+        cursor: pointer;
+        & p {
+            font-size: 0.8rem;
+            margin-right: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        & span {
+            font-weight: bold;
+        }
+    }
+}
+
+.dishes-element-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 0%;
+    background-color: #99e2d0;
+    border-radius: 0px 15px 15px 0px;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition: all 1s;
+    cursor: pointer;
+    &.fa-check-circle {
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+
+
+
 .dishes-element-txt {
     padding: 0;
     margin: 0;
@@ -259,13 +336,10 @@
     }
 }
 
-i.fas.fa-check-circle {
-    position: relative;
-    top: 25px;
-    color: #fff;
-    padding: 0px 20px;
-    opacity: 1;
-}
+
+
+
+
 
   .aside__button:hover {
     background: #fff;
@@ -278,7 +352,7 @@ i.fas.fa-check-circle {
 }
 
 
-.dishes-element-checkbox {
+/* .dishes-element-checkbox {
    position: relative;
    background-color: #99e2d0;
    border-bottom-right-radius: 15px;
@@ -303,7 +377,7 @@ i.fas.fa-check-circle {
     padding: 0px 20px;
     opacity: 1;
   }
-
+*/
 
 .aside-button {
     flex: 1 0 auto;
