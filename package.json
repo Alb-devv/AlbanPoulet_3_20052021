@@ -2,7 +2,7 @@
   "name": "projet_3_ohmyfood",
   "version": "1.0.0",
   "description": "p3 opc",
-  "main": "index.js",
+  "main": "home.html",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:.public/css/style.css --style compressed"
   },
