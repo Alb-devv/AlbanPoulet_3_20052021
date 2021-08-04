@@ -5,7 +5,11 @@
   "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:.public/css/style.css --style compressed"
-  },
+ },
+"repository": {
+  "type": "git",
+  "url": "git+https://github.com/Alb-devv/AlbanPoulet_3_20052021.git"
+},
   "keywords": [
     "opc_p3"
   ],
