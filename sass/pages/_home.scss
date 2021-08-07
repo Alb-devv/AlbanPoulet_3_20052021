@@ -72,7 +72,7 @@ a, a:visited {
       height: 51px;
       border-radius: 30px;
       text-decoration-color: white;
-      background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+      background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
       box-shadow: 2px 4px 7px 0px #C9C9C9;
       border: transparent;
       &:hover {
@@ -124,7 +124,7 @@ a, a:visited {
             background: #f5edff;
             border-radius: 20px;
             &.step-container .step-container .items {
-                color:#9356DC;
+                color:$colour-primary;
             }
         }
     }
@@ -132,7 +132,7 @@ a, a:visited {
         position: absolute;
         left: 25px;
         margin-top: 4px;
-        background: #9356DC;
+        background: $colour-primary;
         border-radius: 100%;
         color: #fff;
         height: 25px;
@@ -151,7 +151,7 @@ a, a:visited {
         padding-right: 10px;
     }
     &:hover .items {
-        color:#9356DC;
+        color:$colour-primary;
     }
 }
 
@@ -264,7 +264,7 @@ a, a:visited {
             bottom: 25px;
             font-size: 24px;
             &:hover {
-              background: linear-gradient(#9356dc, #ff79da);
+              background: linear-gradient($colour-primary, $colour-secondary);
               -webkit-text-fill-color: transparent;
               -webkit-background-clip: text;
               background-clip: text;
@@ -391,7 +391,7 @@ a, a:visited {
         position: unset;
         left: 25px;
         margin-top: 4px;
-        background: #9356dc;
+        background: $colour-primary;
         border-radius: 100%;
         color: #fff;
         height: 25px;
