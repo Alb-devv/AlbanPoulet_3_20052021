@@ -59,12 +59,12 @@ a, a:visited {
        width: 237px;
        height: 54px;
        font-family: "Roboto", sans-serif;
-       font-weight: 1000;
+       font-weight: 900;
     }
     &__byline {
       width: 310px;
       height: 40px;
-      font-weight: 1;
+      font-weight: 100;
       margin-bottom: 18px;
     }
     &__btn {
@@ -92,7 +92,7 @@ a, a:visited {
         width: 180px;
         margin-bottom: 30px;
         font-size: 24px;
-        font-weight: 1000;
+        font-weight: 900;
         margin-left: 20px;
     }
     &__step {
@@ -415,7 +415,7 @@ a, a:visited {
     width: 180px;
     margin-bottom: 30px;
     font-size: 24px;
-    font-weight: 1000;   
+    font-weight: 900;   
     text-align: center;
     display: flex;
     margin-left: 50px;
@@ -493,7 +493,7 @@ a, a:visited {
     &__byline {
       width: auto;
       height: 40px;
-      font-weight: 1;
+      font-weight: 100;
       margin-bottom: 0px;
       font-size: 22px;
     }
