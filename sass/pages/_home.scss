@@ -267,9 +267,7 @@ a, a:visited {
               background: linear-gradient($colour-primary, $colour-secondary);
               -webkit-text-fill-color: transparent;
               -webkit-background-clip: text;
-              -moz-background-clip: text;
-              -ms-background-clip: text;
-              -o-background-clip: text;
+              background-clip: text;
               opacity: 1;
               z-index: 9;
             }
